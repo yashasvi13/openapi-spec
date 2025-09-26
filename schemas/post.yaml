@@ -13,7 +13,7 @@ components:
           type: string
           example: "This is the post content."
         author:
-          $ref: "https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/my-openapi-spec/main/schemas/user.yaml#/components/schemas/User"
+          $ref: "https://raw.githubusercontent.com/yashasvi13/openapi-spec/main/schemas/user.yaml#/components/schemas/User"
       required:
         - id
         - title
