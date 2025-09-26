@@ -1,0 +1,20 @@
+components:
+  schemas:
+    Post:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 101
+        title:
+          type: string
+          example: "My first post"
+        content:
+          type: string
+          example: "This is the post content."
+        author:
+          $ref: "https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/my-openapi-spec/main/schemas/user.yaml#/components/schemas/User"
+      required:
+        - id
+        - title
+        - author
